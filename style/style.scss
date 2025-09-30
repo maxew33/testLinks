@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 375px;
+    width: min(100vw, 375px);
     background: #fff;
     margin: auto;
     min-height: 100vh;
