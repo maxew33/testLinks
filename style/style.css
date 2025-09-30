@@ -1,11 +1,10 @@
 :root {
   font-family: Inter, Arial, sans-serif;
-  background: #000;
+  background: #fff;
 }
 
 body {
-  max-width: 375px;
-  background: #fff;
+  width: min(100vw, 375px);
   margin: auto;
   min-height: 100vh;
   color: #1b115c;
@@ -15,7 +14,7 @@ body {
   position: relative;
 }
 .max-container > img {
-  max-width: 375px;
+  width: min(100vw, 375px);
   height: auto;
 }
 .max-container > *:not(img) {
@@ -57,7 +56,6 @@ body {
   height: auto;
 }
 
-/* Modal */
 .modal {
   position: fixed;
   bottom: 0;
@@ -95,6 +93,7 @@ body {
 .buttons {
   margin-top: 14px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: 12px;
 }
@@ -107,6 +106,11 @@ body {
   color: inherit;
   text-align: center;
   width: 20%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 .share-btn img {
   width: 80%;
