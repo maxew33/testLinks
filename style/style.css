@@ -82,6 +82,7 @@ body {
 
 .modal[aria-hidden=false] {
   display: flex;
+  max-width: 1200px;
 }
 
 .modal__panel {
